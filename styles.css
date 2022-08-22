@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://img.freepik.com/foto-gratis/cuaderno-plano-lista-tareas-pendientes-escritorio_23-2148938732.jpg?w=1060&t=st=1661181862~exp=1661182462~hmac=6e9ebc5968e270556699336c62633ecacf35a967c6d993052b478e5c6216b6a8');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;  
+}
+
+#add-task-container {
+    width: 350px;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    margin-bottom: 20px;
+
+    display: flex;
+
+}
+
+input {
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task {
+    flex: 1;
+    transition: .3s;
+
+    font-size: 1.2rem;
+    padding: 5px;
+
+    background-color: #fff;
+    color: #ddb204;
+
+    border: 2px solid #ddb204;
+    border-radius: 10px;
+}
+
+
+#add-task:hover{
+    background-color: #ddb204;
+    color: #fff;
+}
+
+
+
+/* Styles added to extra tasks */
+
+.task {
+    color: gray;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.task li {
+    flex: 4;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.task button {
+    flex: 0.5;
+    margin-left: 5px;
+    border-radius: 4px; 
+    background-color: #fff;
+}
+
+
+.checkTask {
+    color: green;
+    border: 2px solid green;
+;
+}
+
+.checkTask:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.deleteTask {
+    color: salmon;
+    border: 2px solid salmon;
+}
+
+.deleteTask:hover{
+    cursor: pointer;
+    background-color: salmon;
+    color: white;
+}
+
+
+
+
+footer{
+    text-align: center;
+    color: black;
+    position: absolute;
+    bottom: 5px;
+    
+}
+
+footer a {
+    padding: 0 2px;
+    text-decoration: none;
+    color: green;
+    
+}
+
+footer a:hover {
+    color: darkgray;
+    cursor: pointer;
+}   
